@@ -9,6 +9,12 @@
 1. 编译：`Ctrl+Shift+B` 触发编译。
 2. 调试：`F5` 启动调试，需关闭外部黑框（`externalConsole: false`）。
 
-## 三、下载资源
-点击下载完整配置文档：
-[VSCode-C++-Setup-Guide.docx](https://github.com/microdzh/VSCode-C--Setup/raw/main/VSCode-C++-Setup-Guide.docx)
+## 三、MinGW64 环境配置
+### 1. 下载地址
+官方源（较慢）：https://sourceforge.net/projects/mingw-w64/files/
+国内镜像（推荐）：https://github.com/niXman/mingw-builds-binaries/releases
+### 2. 安装/配置步骤
+1. 下载 MinGW64 压缩包（选择 x86_64-posix-seh 版本）；
+2. 解压到本地（如 `D:\mingw64`）；
+3. 将 `D:\mingw64\bin` 添加到系统环境变量 PATH；
+4. 验证：终端输入 `g++ --version`，显示版本号即配置成功。
